@@ -8,9 +8,9 @@
  * Author: HTG-YT <https://github.com/HTG-YT>
  */
 
-#ifndef __C_GAME_ENGINE_PRELUDE_H__
-#define __C_GAME_ENGINE_PRELUDE_H__
+#ifndef __C_GAME_ENGINE_DEFS_H__
+#define __C_GAME_ENGINE_DEFS_H__
 
 #define INLINE                                                                                     static inline
 
-#endif /* __C_GAME_ENGINE_PRELUDE_H__ */
+#endif /* __C_GAME_ENGINE_DEFS_H__ */
