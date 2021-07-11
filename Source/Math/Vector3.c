@@ -8,8 +8,6 @@
  * Author: HTG-YT <https://github.com/HTG-YT>
  */
 
-#include <stdbool.h>
-
 #include "../../Include/Math/Vector3.h"
 
 INLINE struct Vector3 Add(struct Vector3 lhs, struct Vector3 rhs) {
@@ -44,11 +42,14 @@ INLINE struct Vector3 Div(struct Vector3 lhs, float num) {
         };
 }
 
-INLINE int Eq(struct Vector3 lhs, struct Vector3 rhs) {
-        return
-                (lhs.x - rhs.x < 1e-5) &&
-                (lhs.y - rhs.y < 1e-5) &&
-                (lhs.z - rhs.z < 1e-5);
+INLINE float SquMagnitude(struct Vector3 vector3) {
+        return vector3.x * vector3.x + vector3.y * vector3.y + vector3.z * vector3.z;
 }
 
+INLINE int Eq(struct Vector3 lhs, struct Vector3 rhs) {
+        return SquMagnitude(Sub(lhs, rhs)) < 9.9999994e-11f;
+}
 
+INLINE int Ne(struct Vector3 lhs, struct Vector3 rhs) {
+        return !Eq(lhs, rhs);
+}

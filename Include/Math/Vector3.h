@@ -24,6 +24,8 @@ INLINE Vector3 Sub(struct Vector3 lhs, struct Vector3 rhs);
 INLINE Vector3 Mul(struct Vector3 lhs, float num);
 INLINE Vector3 Div(struct Vector3 lhs, float num);
 
+INLINE float SquMagnitude(struct Vector3 vector3);
+
 INLINE int Eq(struct Vector3 lhs, struct Vector3 rhs);
 INLINE int Ne(struct Vector3 lhs, struct Vector3 rhs);
 
