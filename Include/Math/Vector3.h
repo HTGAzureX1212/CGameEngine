@@ -19,10 +19,10 @@ struct Vector3 {
         float z;
 };
 
-INLINE Vector3 Add(struct Vector3 lhs, struct Vector3 rhs);
-INLINE Vector3 Sub(struct Vector3 lhs, struct Vector3 rhs);
-INLINE Vector3 Mul(struct Vector3 lhs, float num);
-INLINE Vector3 Div(struct Vector3 lhs, float num);
+INLINE struct Vector3 Add(struct Vector3 lhs, struct Vector3 rhs);
+INLINE struct Vector3 Sub(struct Vector3 lhs, struct Vector3 rhs);
+INLINE struct Vector3 Mul(struct Vector3 lhs, float num);
+INLINE struct Vector3 Div(struct Vector3 lhs, float num);
 
 INLINE float SquMagnitude(struct Vector3 vector3);
 
