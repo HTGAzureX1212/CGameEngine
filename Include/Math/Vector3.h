@@ -19,14 +19,25 @@ struct Vector3 {
         float z;
 };
 
-INLINE struct Vector3 Add(struct Vector3 lhs, struct Vector3 rhs);
-INLINE struct Vector3 Sub(struct Vector3 lhs, struct Vector3 rhs);
-INLINE struct Vector3 Mul(struct Vector3 lhs, float num);
-INLINE struct Vector3 Div(struct Vector3 lhs, float num);
+INLINE struct Vector3
+Add(struct Vector3 lhs, struct Vector3 rhs);
 
-INLINE float SquMagnitude(struct Vector3 vector3);
+INLINE struct Vector3
+Sub(struct Vector3 lhs, struct Vector3 rhs);
 
-INLINE int Eq(struct Vector3 lhs, struct Vector3 rhs);
-INLINE int Ne(struct Vector3 lhs, struct Vector3 rhs);
+INLINE struct Vector3
+Mul(struct Vector3 lhs, float num);
+
+INLINE struct Vector3
+Div(struct Vector3 lhs, float num);
+
+INLINE float
+SquMagnitude(struct Vector3 vector3);
+
+INLINE int
+Eq(struct Vector3 lhs, struct Vector3 rhs);
+
+INLINE int
+Ne(struct Vector3 lhs, struct Vector3 rhs);
 
 #endif  /* __C_GAME_ENGINE_VECTOR3_H__ */
